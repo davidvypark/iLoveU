@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1DC1742603C1A07343C6EC /* Pods_iLoveU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6ABCFC1443587D7DCFA3790 /* Pods_iLoveU.framework */; };
 		FFF29B5F1D2DF5E600D8053C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B5E1D2DF5E600D8053C /* AppDelegate.swift */; };
 		FFF29B611D2DF5E600D8053C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B601D2DF5E600D8053C /* ViewController.swift */; };
 		FFF29B641D2DF5E600D8053C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B621D2DF5E600D8053C /* Main.storyboard */; };
 		FFF29B661D2DF5E600D8053C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B651D2DF5E600D8053C /* Assets.xcassets */; };
 		FFF29B691D2DF5E600D8053C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B671D2DF5E600D8053C /* LaunchScreen.storyboard */; };
+		FFF29B711D2E836300D8053C /* MessegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B701D2E836300D8053C /* MessegeViewController.swift */; };
+		FFF29B731D2ED85600D8053C /* ArabicSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B721D2ED85600D8053C /* ArabicSound.mp3 */; };
+		FFF29B771D2EDC3500D8053C /* SpanishSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B751D2EDC3500D8053C /* SpanishSound.mp3 */; };
+		FFF29B781D2EDC3500D8053C /* ChineseSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B761D2EDC3500D8053C /* ChineseSound.mp3 */; };
+		FFF29B7A1D2EDE0100D8053C /* RussianSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B791D2EDE0100D8053C /* RussianSound.mp3 */; };
+		FFF29B7C1D2EDF2400D8053C /* JapaneseSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B7B1D2EDF2400D8053C /* JapaneseSound.mp3 */; };
+		FFF29B7E1D2FEFB000D8053C /* HindiSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B7D1D2FEFB000D8053C /* HindiSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6ABCFC1443587D7DCFA3790 /* Pods_iLoveU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iLoveU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDA5750592ECD892D28757A /* Pods-iLoveU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLoveU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iLoveU/Pods-iLoveU.debug.xcconfig"; sourceTree = "<group>"; };
+		F45EEC9510483394903CCFFE /* Pods-iLoveU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLoveU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iLoveU/Pods-iLoveU.release.xcconfig"; sourceTree = "<group>"; };
+		FFD0C7B61D31534E000136D1 /* Spring.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spring.framework; path = "../../../Library/Developer/Xcode/DerivedData/iLoveU-hannnntdnzpsmmcnixgnjftqacqi/Build/Products/Debug-iphonesimulator/Spring.framework"; sourceTree = "<group>"; };
 		FFF29B5B1D2DF5E600D8053C /* iLoveU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLoveU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF29B5E1D2DF5E600D8053C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF29B601D2DF5E600D8053C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,13 @@
 		FFF29B651D2DF5E600D8053C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF29B681D2DF5E600D8053C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF29B6A1D2DF5E600D8053C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF29B701D2E836300D8053C /* MessegeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessegeViewController.swift; sourceTree = "<group>"; };
+		FFF29B721D2ED85600D8053C /* ArabicSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ArabicSound.mp3; sourceTree = "<group>"; };
+		FFF29B751D2EDC3500D8053C /* SpanishSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SpanishSound.mp3; sourceTree = "<group>"; };
+		FFF29B761D2EDC3500D8053C /* ChineseSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ChineseSound.mp3; sourceTree = "<group>"; };
+		FFF29B791D2EDE0100D8053C /* RussianSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RussianSound.mp3; sourceTree = "<group>"; };
+		FFF29B7B1D2EDF2400D8053C /* JapaneseSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JapaneseSound.mp3; sourceTree = "<group>"; };
+		FFF29B7D1D2FEFB000D8053C /* HindiSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HindiSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +48,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1DC1742603C1A07343C6EC /* Pods_iLoveU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		865C79E6FAA97D2BE2C47F86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDDA5750592ECD892D28757A /* Pods-iLoveU.debug.xcconfig */,
+				F45EEC9510483394903CCFFE /* Pods-iLoveU.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1A7B71E928C0F3B1C9CDD76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0C7B61D31534E000136D1 /* Spring.framework */,
+				C6ABCFC1443587D7DCFA3790 /* Pods_iLoveU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FFF29B521D2DF5E600D8053C = {
 			isa = PBXGroup;
 			children = (
 				FFF29B5D1D2DF5E600D8053C /* iLoveU */,
 				FFF29B5C1D2DF5E600D8053C /* Products */,
+				B1A7B71E928C0F3B1C9CDD76 /* Frameworks */,
+				865C79E6FAA97D2BE2C47F86 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +97,26 @@
 				FFF29B621D2DF5E600D8053C /* Main.storyboard */,
 				FFF29B5E1D2DF5E600D8053C /* AppDelegate.swift */,
 				FFF29B601D2DF5E600D8053C /* ViewController.swift */,
+				FFF29B701D2E836300D8053C /* MessegeViewController.swift */,
+				FFF29B741D2ED88D00D8053C /* Sounds */,
 				FFF29B651D2DF5E600D8053C /* Assets.xcassets */,
 				FFF29B671D2DF5E600D8053C /* LaunchScreen.storyboard */,
 				FFF29B6A1D2DF5E600D8053C /* Info.plist */,
 			);
 			path = iLoveU;
+			sourceTree = "<group>";
+		};
+		FFF29B741D2ED88D00D8053C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FFF29B751D2EDC3500D8053C /* SpanishSound.mp3 */,
+				FFF29B761D2EDC3500D8053C /* ChineseSound.mp3 */,
+				FFF29B721D2ED85600D8053C /* ArabicSound.mp3 */,
+				FFF29B7B1D2EDF2400D8053C /* JapaneseSound.mp3 */,
+				FFF29B7D1D2FEFB000D8053C /* HindiSound.mp3 */,
+				FFF29B791D2EDE0100D8053C /* RussianSound.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF29B6D1D2DF5E600D8053C /* Build configuration list for PBXNativeTarget "iLoveU" */;
 			buildPhases = (
+				A20F22907358A3D43FC6E1E2 /* [CP] Check Pods Manifest.lock */,
 				FFF29B571D2DF5E600D8053C /* Sources */,
 				FFF29B581D2DF5E600D8053C /* Frameworks */,
 				FFF29B591D2DF5E600D8053C /* Resources */,
+				43FF210BE8C361793F822F73 /* [CP] Embed Pods Frameworks */,
+				ED1B9AB4DA9FAC093D26BD3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,19 +181,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF29B7A1D2EDE0100D8053C /* RussianSound.mp3 in Resources */,
+				FFF29B771D2EDC3500D8053C /* SpanishSound.mp3 in Resources */,
+				FFF29B731D2ED85600D8053C /* ArabicSound.mp3 in Resources */,
 				FFF29B691D2DF5E600D8053C /* LaunchScreen.storyboard in Resources */,
 				FFF29B661D2DF5E600D8053C /* Assets.xcassets in Resources */,
+				FFF29B781D2EDC3500D8053C /* ChineseSound.mp3 in Resources */,
+				FFF29B7E1D2FEFB000D8053C /* HindiSound.mp3 in Resources */,
 				FFF29B641D2DF5E600D8053C /* Main.storyboard in Resources */,
+				FFF29B7C1D2EDF2400D8053C /* JapaneseSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43FF210BE8C361793F822F73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iLoveU/Pods-iLoveU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A20F22907358A3D43FC6E1E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1B9AB4DA9FAC093D26BD3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iLoveU/Pods-iLoveU-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFF29B571D2DF5E600D8053C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF29B711D2E836300D8053C /* MessegeViewController.swift in Sources */,
 				FFF29B611D2DF5E600D8053C /* ViewController.swift in Sources */,
 				FFF29B5F1D2DF5E600D8053C /* AppDelegate.swift in Sources */,
 			);
@@ -250,23 +363,29 @@
 		};
 		FFF29B6E1D2DF5E600D8053C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDDA5750592ECD892D28757A /* Pods-iLoveU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iLoveU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DavidVY.iLoveU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FFF29B6F1D2DF5E600D8053C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F45EEC9510483394903CCFFE /* Pods-iLoveU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iLoveU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DavidVY.iLoveU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -18,6 +19,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="old_map-1280x800" translatesAutoresizingMaskIntoConstraints="NO" id="lY3-65-hl8">
+                                <rect key="frame" x="30" y="36" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lY3-65-hl8" secondAttribute="height" multiplier="15:8" id="RSR-Qw-3G5"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FpU-ZB-B12">
                                 <rect key="frame" x="60" y="60" width="480" height="480"/>
                                 <subviews>
@@ -27,14 +34,26 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaQ-sc-n7h">
                                                 <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
                                                 <state key="normal" title="Chinese" image="China"/>
+                                                <connections>
+                                                    <action selector="chinaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roN-3r-i0f"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" id="WAl-B1-v4Z"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSR-vf-eMK">
                                                 <rect key="frame" x="0.0" y="164" width="154" height="153"/>
                                                 <state key="normal" title="Spanish" image="Mexico"/>
+                                                <connections>
+                                                    <action selector="mexicoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9A3-aY-xaK"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="flipHorizontal" id="UI2-jR-Mnn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zid-Ta-a8Q">
                                                 <rect key="frame" x="0.0" y="327" width="154" height="154"/>
                                                 <state key="normal" title="English" image="USA"/>
+                                                <connections>
+                                                    <action selector="usaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1b-Gl-6Ph"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="flipHorizontal" id="lxZ-MW-lVL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -43,15 +62,27 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8z-aP-a45">
                                                 <rect key="frame" x="0.0" y="0.0" width="153" height="154"/>
-                                                <state key="normal" title="Portuguese" image="Portugal"/>
+                                                <state key="normal" title="Portuguese" image="Germany"/>
+                                                <connections>
+                                                    <action selector="germanyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yvK-tp-Uj1"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="flipHorizontal" id="YGn-DA-aNa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZx-Sq-uH3">
                                                 <rect key="frame" x="0.0" y="164" width="153" height="153"/>
                                                 <state key="normal" title="Arabic" image="Arabic"/>
+                                                <connections>
+                                                    <action selector="arabButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGn-3Y-xH5"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="flipHorizontal" id="UNz-9Z-9Y2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-Uo-DL7">
                                                 <rect key="frame" x="0.0" y="327" width="153" height="154"/>
                                                 <state key="normal" title="Hindi" image="India"/>
+                                                <connections>
+                                                    <action selector="indiaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Xx-sA-rV2"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="flipHorizontal" id="VFX-9h-Mdw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -60,15 +91,27 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsI-N0-WuN">
                                                 <rect key="frame" x="0.0" y="0.0" width="154" height="154"/>
-                                                <state key="normal" title="Bengali" image="Bangladesh"/>
+                                                <state key="normal" title="Bengali" image="Korea"/>
+                                                <connections>
+                                                    <action selector="koreaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgw-BD-eR3"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="flipHorizontal" id="4fk-j6-QUT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-iI-WhJ">
                                                 <rect key="frame" x="0.0" y="164" width="154" height="153"/>
                                                 <state key="normal" title="Russian" image="Russia"/>
+                                                <connections>
+                                                    <action selector="russiaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDm-bE-VDi"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="flipHorizontal" id="fTT-w9-hDS"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eG-Og-6Cu">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eG-Og-6Cu">
                                                 <rect key="frame" x="0.0" y="327" width="154" height="154"/>
                                                 <state key="normal" title="Japanese" image="Japan"/>
+                                                <connections>
+                                                    <action selector="japanButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LG2-fI-qEj"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="flipHorizontal" id="Ec5-ug-XvE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -82,20 +125,36 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lY3-65-hl8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6Nf-8T-3SK"/>
                             <constraint firstItem="FpU-ZB-B12" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bS1-lN-hBh"/>
+                            <constraint firstItem="lY3-65-hl8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="dXh-05-qWF"/>
+                            <constraint firstItem="lY3-65-hl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="2" id="ltw-cy-HmO"/>
                             <constraint firstItem="FpU-ZB-B12" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="pn2-MK-Dr2"/>
                             <constraint firstItem="FpU-ZB-B12" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="qrH-Ww-nws"/>
                             <constraint firstItem="FpU-ZB-B12" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wUr-kY-MB0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="arabButton" destination="eZx-Sq-uH3" id="KIv-Ly-FFb"/>
+                        <outlet property="chinaButton" destination="TaQ-sc-n7h" id="IgB-XQ-vTf"/>
+                        <outlet property="germanyButton" destination="X8z-aP-a45" id="6Hz-k8-eyH"/>
+                        <outlet property="indiaButton" destination="dTH-Uo-DL7" id="MRa-SJ-3tf"/>
+                        <outlet property="japanButton" destination="7eG-Og-6Cu" id="uZR-aT-9er"/>
+                        <outlet property="koreaButton" destination="rsI-N0-WuN" id="ARw-wE-CFl"/>
+                        <outlet property="mainBackgroundImage" destination="lY3-65-hl8" id="2rC-gJ-blY"/>
+                        <outlet property="mexicoButton" destination="JSR-vf-eMK" id="jup-Ex-pYi"/>
+                        <outlet property="russiaButton" destination="XBb-iI-WhJ" id="UTB-Sj-K7q"/>
+                        <outlet property="usaButton" destination="zid-Ta-a8Q" id="EzB-vG-ews"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="173" y="362"/>
         </scene>
-        <!--View Controller-->
+        <!--Messege View Controller-->
         <scene sceneID="B3D-Ef-dYd">
             <objects>
-                <viewController id="Dqf-Ic-HKm" sceneMemberID="viewController">
+                <viewController id="Dqf-Ic-HKm" customClass="MessegeViewController" customModule="iLoveU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ma5-oT-qwT"/>
                         <viewControllerLayoutGuide type="bottom" id="R4Q-1m-5Nz"/>
@@ -103,23 +162,83 @@
                     <view key="view" contentMode="scaleToFill" id="wXr-qm-HN5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iD9-EI-03b">
+                                <rect key="frame" x="0.0" y="-1" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Love You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z5-nC-4kQ">
+                                <rect key="frame" x="105" y="180" width="390" height="180"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="50"/>
+                                <color key="textColor" red="0.9650240384615385" green="0.9650240384615385" blue="0.9650240384615385" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.32319711538461537" green="0.32319711538461537" blue="0.32319711538461537" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE3-HQ-Tum">
+                                <rect key="frame" x="161" y="282" width="279" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OE3-HQ-Tum" secondAttribute="height" multiplier="31:25" id="1GP-Op-l9c"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="PlayButton"/>
+                                <connections>
+                                    <action selector="heartButtonTapped:" destination="Dqf-Ic-HKm" eventType="touchUpInside" id="Dqp-G2-nSf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5y-sb-Pq5">
+                                <rect key="frame" x="180" y="-1" width="240" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="F5y-sb-Pq5" secondAttribute="height" multiplier="109:96" id="axn-pk-NP3"/>
+                                </constraints>
+                                <state key="normal" title="Back" image="BackButton"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Dqf-Ic-HKm" eventType="touchUpInside" id="KyX-IO-bpy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iD9-EI-03b" firstAttribute="width" secondItem="wXr-qm-HN5" secondAttribute="width" id="0CQ-M4-nBM"/>
+                            <constraint firstItem="1Z5-nC-4kQ" firstAttribute="centerX" secondItem="wXr-qm-HN5" secondAttribute="centerX" id="58N-sJ-slC"/>
+                            <constraint firstItem="iD9-EI-03b" firstAttribute="height" secondItem="wXr-qm-HN5" secondAttribute="height" id="787-4o-xaE"/>
+                            <constraint firstItem="F5y-sb-Pq5" firstAttribute="centerX" secondItem="wXr-qm-HN5" secondAttribute="centerX" id="B0U-Zd-hWl"/>
+                            <constraint firstItem="1Z5-nC-4kQ" firstAttribute="height" secondItem="wXr-qm-HN5" secondAttribute="height" multiplier="0.3" id="BdG-2y-9Tx"/>
+                            <constraint firstItem="iD9-EI-03b" firstAttribute="centerY" secondItem="wXr-qm-HN5" secondAttribute="centerY" id="F5H-yx-bTF"/>
+                            <constraint firstItem="iD9-EI-03b" firstAttribute="centerX" secondItem="wXr-qm-HN5" secondAttribute="centerX" id="Mxm-xw-7A0"/>
+                            <constraint firstItem="OE3-HQ-Tum" firstAttribute="centerX" secondItem="1Z5-nC-4kQ" secondAttribute="centerX" id="NKV-HV-lDw"/>
+                            <constraint firstItem="F5y-sb-Pq5" firstAttribute="width" secondItem="wXr-qm-HN5" secondAttribute="width" multiplier="0.4" id="O0X-XB-3MU"/>
+                            <constraint firstItem="OE3-HQ-Tum" firstAttribute="width" secondItem="F5y-sb-Pq5" secondAttribute="width" id="PlZ-Q2-O8H"/>
+                            <constraint firstItem="1Z5-nC-4kQ" firstAttribute="centerY" secondItem="wXr-qm-HN5" secondAttribute="centerY" multiplier="0.9" id="QbA-Vb-YEe"/>
+                            <constraint firstItem="F5y-sb-Pq5" firstAttribute="centerY" secondItem="wXr-qm-HN5" secondAttribute="centerY" multiplier="0.35" id="afB-Nw-nHl"/>
+                            <constraint firstItem="OE3-HQ-Tum" firstAttribute="top" secondItem="1Z5-nC-4kQ" secondAttribute="bottom" id="ngl-se-RfE"/>
+                            <constraint firstItem="1Z5-nC-4kQ" firstAttribute="width" secondItem="wXr-qm-HN5" secondAttribute="width" multiplier="0.65" id="sfi-Z6-L95"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="iD9-EI-03b" id="P55-dO-Cy2"/>
+                        <outlet property="heartButton" destination="OE3-HQ-Tum" id="8Il-Mw-lTI"/>
+                        <outlet property="loveMessegeLabel" destination="1Z5-nC-4kQ" id="LHt-62-hvh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LuW-UM-kSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="387"/>
+            <point key="canvasLocation" x="853" y="362"/>
         </scene>
     </scenes>
     <resources>
         <image name="Arabic" width="1010" height="575"/>
-        <image name="Bangladesh" width="2000" height="2797"/>
+        <image name="BackButton" width="941" height="864"/>
         <image name="China" width="2000" height="1662"/>
+        <image name="Germany" width="341" height="400"/>
         <image name="India" width="221" height="248"/>
         <image name="Japan" width="300" height="300"/>
+        <image name="Korea" width="300" height="300"/>
         <image name="Mexico" width="780" height="553"/>
-        <image name="Portugal" width="2000" height="4348"/>
+        <image name="PlayButton" width="1134" height="1049"/>
         <image name="Russia" width="4444" height="2630"/>
         <image name="USA" width="7066" height="4506"/>
+        <image name="old_map-1280x800" width="1280" height="800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lxZ-MW-lVL"/>
+    </inferredMetricsTieBreakers>
 </document>
