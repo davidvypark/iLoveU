@@ -1,0 +1,6 @@
+framework module FZCarousel {
+  umbrella header "FZCarousel-umbrella.h"
+
+  export *
+  module * { export * }
+}
