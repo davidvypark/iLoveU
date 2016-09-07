@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import TransitionTreasury
-import TransitionAnimation
 
 class ViewController: UIViewController {
 
