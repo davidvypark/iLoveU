@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     @IBAction func chinaButtonTapped(sender: AnyObject) {
         loveMessege = "我爱你"
         soundFile = "ChineseSound"
-        backgroundImageName = "ChinaBackground"
+		backgroundImageName = [UIImage(named:"ChinaBackground")!]
 		
 		//present(chinaButton, location: CGPointMake(0, 0))
         
@@ -52,51 +52,51 @@ class ViewController: UIViewController {
     @IBAction func mexicoButtonTapped(sender: UIButton) {
         loveMessege = "te amo"
         soundFile = "SpanishSound"
-        backgroundImageName = "MexicoBackground"
+		backgroundImageName = [UIImage(named:"MexicoBackground")!]
     }
 
     @IBAction func usaButtonTapped(sender: UIButton) {                  //NEEDED: USA SOUND
         loveMessege = "i love you"
         soundFile = "ArabicSound"
-        backgroundImageName = "USABackground"
+		backgroundImageName = [UIImage(named:"USABackground")!]
     }
     // i should change portugal to something else
     @IBAction func germanyButtonTapped(sender: UIButton) {              //NEEDED: GERMAN SOUND
         loveMessege = "ich liebe dich"
         soundFile = "SpanishSound"
-        backgroundImageName = "GermanyBackground"
+		backgroundImageName = [UIImage(named:"GermanyBackground")!]
     }
     
     @IBAction func arabButtonTapped(sender: UIButton) {
         loveMessege = "أحبك"
         soundFile = "ArabicSound"
-        backgroundImageName = "ArabBackground"
+		backgroundImageName = [UIImage(named:"ArabBackground")!]
     }
     
     @IBAction func indiaButtonTapped(sender: UIButton) {
         loveMessege = "मैं तुमसे प्यार करता हूँ"
         soundFile = "HindiSound"
-        backgroundImageName = "IndiaBackground"
+		backgroundImageName = [UIImage(named:"IndiaBackground")!]
     }
     
     //change bengali to something else too.
-    @IBAction func koreaButtonTapped(sender: UIButton) {                //NEEDED: KOREAN SOUND
+    @IBAction func koreaButtonTapped(sender: UIButton) {
         loveMessege = "사랑해"
-        soundFile = "ArabicSound"
-        backgroundImageName = "KoreaBackground"
+        soundFile = "KoreanSound"
+		backgroundImageName = [UIImage(named:"KoreaBackground")!]
         
     }
     
     @IBAction func russiaButtonTapped(sender: UIButton) {
         loveMessege = "я люблю тебя"
         soundFile = "RussianSound"
-        backgroundImageName = "RussiaBackground"
+        backgroundImageName = [UIImage(named:"RussiaBackground")!]
     }
     
     @IBAction func japanButtonTapped(sender: UIButton) {
         loveMessege = "愛しています"
         soundFile = "JapaneseSound"
-        backgroundImageName = "JapanBackground"
+		backgroundImageName = [UIImage(named:"JapanBackground")!]
     }
     
     

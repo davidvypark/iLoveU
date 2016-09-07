@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FC1DC1742603C1A07343C6EC /* Pods_iLoveU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6ABCFC1443587D7DCFA3790 /* Pods_iLoveU.framework */; };
+		FFF0E06D1D80B2850021DA85 /* KoreanSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF0E06C1D80B2850021DA85 /* KoreanSound.mp3 */; };
+		FFF0E07D1D80B6410021DA85 /* FZCarouselCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF0E0731D80B6410021DA85 /* FZCarouselCollectionViewDelegate.m */; };
+		FFF0E07E1D80B6410021DA85 /* FZCarousel.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FFF0E0751D80B6410021DA85 /* FZCarousel.xcconfig */; };
+		FFF0E07F1D80B6410021DA85 /* FZCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF0E0761D80B6410021DA85 /* FZCarousel-dummy.m */; };
+		FFF0E0801D80B6410021DA85 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFF0E0791D80B6410021DA85 /* Info.plist */; };
+		FFF0E0811D80B6410021DA85 /* ResourceBundle-FZCarousel-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFF0E07A1D80B6410021DA85 /* ResourceBundle-FZCarousel-Info.plist */; };
+		FFF0E0841D80B6660021DA85 /* FZCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF0E0831D80B6660021DA85 /* FZCarouselView.m */; };
 		FFF29B5F1D2DF5E600D8053C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B5E1D2DF5E600D8053C /* AppDelegate.swift */; };
 		FFF29B611D2DF5E600D8053C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B601D2DF5E600D8053C /* ViewController.swift */; };
 		FFF29B641D2DF5E600D8053C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B621D2DF5E600D8053C /* Main.storyboard */; };
@@ -27,6 +34,19 @@
 		DDDA5750592ECD892D28757A /* Pods-iLoveU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLoveU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iLoveU/Pods-iLoveU.debug.xcconfig"; sourceTree = "<group>"; };
 		F45EEC9510483394903CCFFE /* Pods-iLoveU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iLoveU.release.xcconfig"; path = "Pods/Target Support Files/Pods-iLoveU/Pods-iLoveU.release.xcconfig"; sourceTree = "<group>"; };
 		FFD0C7B61D31534E000136D1 /* Spring.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spring.framework; path = "../../../Library/Developer/Xcode/DerivedData/iLoveU-hannnntdnzpsmmcnixgnjftqacqi/Build/Products/Debug-iphonesimulator/Spring.framework"; sourceTree = "<group>"; };
+		FFF0E06C1D80B2850021DA85 /* KoreanSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = KoreanSound.mp3; sourceTree = "<group>"; };
+		FFF0E06E1D80B5DF0021DA85 /* iLoveU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iLoveU-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFF0E0721D80B6410021DA85 /* FZCarouselCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZCarouselCollectionViewDelegate.h; path = FZCarousel/FZCarouselCollectionViewDelegate.h; sourceTree = "<group>"; };
+		FFF0E0731D80B6410021DA85 /* FZCarouselCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FZCarouselCollectionViewDelegate.m; path = FZCarousel/FZCarouselCollectionViewDelegate.m; sourceTree = "<group>"; };
+		FFF0E0741D80B6410021DA85 /* FZCarousel.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = FZCarousel.modulemap; sourceTree = "<group>"; };
+		FFF0E0751D80B6410021DA85 /* FZCarousel.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = FZCarousel.xcconfig; sourceTree = "<group>"; };
+		FFF0E0761D80B6410021DA85 /* FZCarousel-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FZCarousel-dummy.m"; sourceTree = "<group>"; };
+		FFF0E0771D80B6410021DA85 /* FZCarousel-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FZCarousel-prefix.pch"; sourceTree = "<group>"; };
+		FFF0E0781D80B6410021DA85 /* FZCarousel-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FZCarousel-umbrella.h"; sourceTree = "<group>"; };
+		FFF0E0791D80B6410021DA85 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF0E07A1D80B6410021DA85 /* ResourceBundle-FZCarousel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FZCarousel-Info.plist"; sourceTree = "<group>"; };
+		FFF0E0821D80B6660021DA85 /* FZCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZCarouselView.h; sourceTree = "<group>"; };
+		FFF0E0831D80B6660021DA85 /* FZCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZCarouselView.m; sourceTree = "<group>"; };
 		FFF29B5B1D2DF5E600D8053C /* iLoveU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLoveU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF29B5E1D2DF5E600D8053C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF29B601D2DF5E600D8053C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,9 +93,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FFF0E07B1D80B6410021DA85 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFF0E0741D80B6410021DA85 /* FZCarousel.modulemap */,
+				FFF0E0751D80B6410021DA85 /* FZCarousel.xcconfig */,
+				FFF0E0761D80B6410021DA85 /* FZCarousel-dummy.m */,
+				FFF0E0771D80B6410021DA85 /* FZCarousel-prefix.pch */,
+				FFF0E0781D80B6410021DA85 /* FZCarousel-umbrella.h */,
+				FFF0E0791D80B6410021DA85 /* Info.plist */,
+				FFF0E07A1D80B6410021DA85 /* ResourceBundle-FZCarousel-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FZCarousel";
+			sourceTree = "<group>";
+		};
+		FFF0E07C1D80B6410021DA85 /* FZCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				FFF0E0721D80B6410021DA85 /* FZCarouselCollectionViewDelegate.h */,
+				FFF0E0731D80B6410021DA85 /* FZCarouselCollectionViewDelegate.m */,
+				FFF0E0821D80B6660021DA85 /* FZCarouselView.h */,
+				FFF0E0831D80B6660021DA85 /* FZCarouselView.m */,
+				FFF0E07B1D80B6410021DA85 /* Support Files */,
+			);
+			name = FZCarousel;
+			path = Pods/FZCarousel;
+			sourceTree = "<group>";
+		};
 		FFF29B521D2DF5E600D8053C = {
 			isa = PBXGroup;
 			children = (
+				FFF0E07C1D80B6410021DA85 /* FZCarousel */,
 				FFF29B5D1D2DF5E600D8053C /* iLoveU */,
 				FFF29B5C1D2DF5E600D8053C /* Products */,
 				B1A7B71E928C0F3B1C9CDD76 /* Frameworks */,
@@ -102,6 +151,7 @@
 				FFF29B651D2DF5E600D8053C /* Assets.xcassets */,
 				FFF29B671D2DF5E600D8053C /* LaunchScreen.storyboard */,
 				FFF29B6A1D2DF5E600D8053C /* Info.plist */,
+				FFF0E06E1D80B5DF0021DA85 /* iLoveU-Bridging-Header.h */,
 			);
 			path = iLoveU;
 			sourceTree = "<group>";
@@ -109,6 +159,7 @@
 		FFF29B741D2ED88D00D8053C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				FFF0E06C1D80B2850021DA85 /* KoreanSound.mp3 */,
 				FFF29B751D2EDC3500D8053C /* SpanishSound.mp3 */,
 				FFF29B761D2EDC3500D8053C /* ChineseSound.mp3 */,
 				FFF29B721D2ED85600D8053C /* ArabicSound.mp3 */,
@@ -182,13 +233,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF29B7A1D2EDE0100D8053C /* RussianSound.mp3 in Resources */,
+				FFF0E07E1D80B6410021DA85 /* FZCarousel.xcconfig in Resources */,
 				FFF29B771D2EDC3500D8053C /* SpanishSound.mp3 in Resources */,
 				FFF29B731D2ED85600D8053C /* ArabicSound.mp3 in Resources */,
 				FFF29B691D2DF5E600D8053C /* LaunchScreen.storyboard in Resources */,
+				FFF0E0811D80B6410021DA85 /* ResourceBundle-FZCarousel-Info.plist in Resources */,
 				FFF29B661D2DF5E600D8053C /* Assets.xcassets in Resources */,
 				FFF29B781D2EDC3500D8053C /* ChineseSound.mp3 in Resources */,
 				FFF29B7E1D2FEFB000D8053C /* HindiSound.mp3 in Resources */,
+				FFF0E0801D80B6410021DA85 /* Info.plist in Resources */,
 				FFF29B641D2DF5E600D8053C /* Main.storyboard in Resources */,
+				FFF0E06D1D80B2850021DA85 /* KoreanSound.mp3 in Resources */,
 				FFF29B7C1D2EDF2400D8053C /* JapaneseSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,8 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF0E0841D80B6660021DA85 /* FZCarouselView.m in Sources */,
 				FFF29B711D2E836300D8053C /* MessegeViewController.swift in Sources */,
+				FFF0E07D1D80B6410021DA85 /* FZCarouselCollectionViewDelegate.m in Sources */,
 				FFF29B611D2DF5E600D8053C /* ViewController.swift in Sources */,
+				FFF0E07F1D80B6410021DA85 /* FZCarousel-dummy.m in Sources */,
 				FFF29B5F1D2DF5E600D8053C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,11 +424,14 @@
 			baseConfigurationReference = DDDA5750592ECD892D28757A /* Pods-iLoveU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iLoveU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DavidVY.iLoveU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iLoveU/iLoveU-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -380,11 +441,13 @@
 			baseConfigurationReference = F45EEC9510483394903CCFFE /* Pods-iLoveU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iLoveU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DavidVY.iLoveU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iLoveU/iLoveU-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

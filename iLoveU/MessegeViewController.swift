@@ -8,18 +8,19 @@
 
 import UIKit
 import AVFoundation
+import FZCarousel
 
 
 var loveMessege: String?
 var soundFile: String?
-var backgroundImageName: String?
+var backgroundImageName: [UIImage]?
 
 class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var loveMessegeLabel: UILabel?
     @IBOutlet weak var heartButton: UIButton?
-    @IBOutlet weak var backgroundImage: UIImageView?
-    
+	@IBOutlet weak var backgroundImage: FZCarouselView! = FZCarouselView()
+	
     var audioPlayer = AVAudioPlayer()
     
     override func viewWillAppear(animated: Bool) {
@@ -33,11 +34,6 @@ class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
 			loveMessegeLabel.adjustsFontSizeToFitWidth = true
 		}
 		
-		if let backgroundImageName = backgroundImageName {
-			if let backgroundImage = backgroundImage {
-				backgroundImage.image = UIImage(named: backgroundImageName)
-			}
-		}
     }
     
     override func viewDidLoad() {
@@ -47,6 +43,12 @@ class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
 		if let heartButton = heartButton {
 			heartButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
 		}
+		
+		backgroundImage.clipsToBounds = true
+		configureCarousel()
+		view.bringSubviewToFront(heartButton!)
+		view.bringSubviewToFront(loveMessegeLabel!)
+		//view.bringSubviewToFron
     }
 
     @IBAction func heartButtonTapped(sender: AnyObject) {
@@ -61,7 +63,6 @@ class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
         } catch {
             print("Error getting the audio file")
         }
-
         
     }
     
@@ -69,12 +70,18 @@ class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
         
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
-    
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+	
+	//MARK: All the carousel stuff
+	
+	func configureCarousel() {
+		backgroundImage.imageArray = backgroundImageName
+		backgroundImage.crankInterval = 2.5
+		backgroundImage.beginCarousel()
+	}
     
     
 }

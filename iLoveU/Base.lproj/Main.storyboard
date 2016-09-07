@@ -163,17 +163,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iD9-EI-03b">
-                                <rect key="frame" x="0.0" y="-1" width="240" height="128"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Love You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z5-nC-4kQ">
-                                <rect key="frame" x="105" y="180" width="390" height="180"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="50"/>
-                                <color key="textColor" red="0.9650240384615385" green="0.9650240384615385" blue="0.9650240384615385" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.32319711538461537" green="0.32319711538461537" blue="0.32319711538461537" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="1" height="2"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOh-jA-zjR" customClass="FZCarouselView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE3-HQ-Tum">
                                 <rect key="frame" x="161" y="282" width="279" height="225"/>
                                 <constraints>
@@ -184,6 +177,14 @@
                                     <action selector="heartButtonTapped:" destination="Dqf-Ic-HKm" eventType="touchUpInside" id="Dqp-G2-nSf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Love You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z5-nC-4kQ">
+                                <rect key="frame" x="105" y="180" width="390" height="180"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="50"/>
+                                <color key="textColor" red="0.9650240384615385" green="0.9650240384615385" blue="0.9650240384615385" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.32319711538461537" green="0.32319711538461537" blue="0.32319711538461537" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="2"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5y-sb-Pq5">
                                 <rect key="frame" x="180" y="-1" width="240" height="212"/>
                                 <constraints>
@@ -197,24 +198,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iD9-EI-03b" firstAttribute="width" secondItem="wXr-qm-HN5" secondAttribute="width" id="0CQ-M4-nBM"/>
+                            <constraint firstItem="AOh-jA-zjR" firstAttribute="height" secondItem="wXr-qm-HN5" secondAttribute="height" id="0CQ-0M-KrS"/>
                             <constraint firstItem="1Z5-nC-4kQ" firstAttribute="centerX" secondItem="wXr-qm-HN5" secondAttribute="centerX" id="58N-sJ-slC"/>
-                            <constraint firstItem="iD9-EI-03b" firstAttribute="height" secondItem="wXr-qm-HN5" secondAttribute="height" id="787-4o-xaE"/>
                             <constraint firstItem="F5y-sb-Pq5" firstAttribute="centerX" secondItem="wXr-qm-HN5" secondAttribute="centerX" id="B0U-Zd-hWl"/>
                             <constraint firstItem="1Z5-nC-4kQ" firstAttribute="height" secondItem="wXr-qm-HN5" secondAttribute="height" multiplier="0.3" id="BdG-2y-9Tx"/>
-                            <constraint firstItem="iD9-EI-03b" firstAttribute="centerY" secondItem="wXr-qm-HN5" secondAttribute="centerY" id="F5H-yx-bTF"/>
-                            <constraint firstItem="iD9-EI-03b" firstAttribute="centerX" secondItem="wXr-qm-HN5" secondAttribute="centerX" id="Mxm-xw-7A0"/>
+                            <constraint firstItem="AOh-jA-zjR" firstAttribute="centerY" secondItem="wXr-qm-HN5" secondAttribute="centerY" id="HDI-BX-9fQ"/>
+                            <constraint firstItem="AOh-jA-zjR" firstAttribute="width" secondItem="wXr-qm-HN5" secondAttribute="width" id="IiB-Gu-QDL"/>
                             <constraint firstItem="OE3-HQ-Tum" firstAttribute="centerX" secondItem="1Z5-nC-4kQ" secondAttribute="centerX" id="NKV-HV-lDw"/>
                             <constraint firstItem="F5y-sb-Pq5" firstAttribute="width" secondItem="wXr-qm-HN5" secondAttribute="width" multiplier="0.4" id="O0X-XB-3MU"/>
                             <constraint firstItem="OE3-HQ-Tum" firstAttribute="width" secondItem="F5y-sb-Pq5" secondAttribute="width" id="PlZ-Q2-O8H"/>
                             <constraint firstItem="1Z5-nC-4kQ" firstAttribute="centerY" secondItem="wXr-qm-HN5" secondAttribute="centerY" multiplier="0.9" id="QbA-Vb-YEe"/>
                             <constraint firstItem="F5y-sb-Pq5" firstAttribute="centerY" secondItem="wXr-qm-HN5" secondAttribute="centerY" multiplier="0.35" id="afB-Nw-nHl"/>
                             <constraint firstItem="OE3-HQ-Tum" firstAttribute="top" secondItem="1Z5-nC-4kQ" secondAttribute="bottom" id="ngl-se-RfE"/>
+                            <constraint firstItem="AOh-jA-zjR" firstAttribute="centerX" secondItem="wXr-qm-HN5" secondAttribute="centerX" id="ru5-q9-gGQ"/>
                             <constraint firstItem="1Z5-nC-4kQ" firstAttribute="width" secondItem="wXr-qm-HN5" secondAttribute="width" multiplier="0.65" id="sfi-Z6-L95"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundImage" destination="iD9-EI-03b" id="P55-dO-Cy2"/>
+                        <outlet property="backgroundImage" destination="AOh-jA-zjR" id="kZX-SO-SGg"/>
                         <outlet property="heartButton" destination="OE3-HQ-Tum" id="8Il-Mw-lTI"/>
                         <outlet property="loveMessegeLabel" destination="1Z5-nC-4kQ" id="LHt-62-hvh"/>
                     </connections>
