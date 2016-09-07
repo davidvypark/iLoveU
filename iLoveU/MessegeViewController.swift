@@ -9,22 +9,16 @@
 import UIKit
 import AVFoundation
 
+
 var loveMessege: String?
 var soundFile: String?
 var backgroundImageName: String?
-
-protocol MessegeViewControllerDelegate: class {
-	
-}
-
 
 class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var loveMessegeLabel: UILabel?
     @IBOutlet weak var heartButton: UIButton?
     @IBOutlet weak var backgroundImage: UIImageView?
-	
-	weak var messegeViewControllerDelegate: MessegeViewControllerDelegate?
     
     var audioPlayer = AVAudioPlayer()
     

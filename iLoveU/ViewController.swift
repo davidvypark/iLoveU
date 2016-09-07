@@ -10,7 +10,7 @@ import UIKit
 import TransitionTreasury
 import TransitionAnimation
 
-class ViewController: UIViewController, ModalTransitionDelegate {
+class ViewController: UIViewController {
 
     
     @IBOutlet weak var chinaButton: UIButton!
@@ -24,16 +24,6 @@ class ViewController: UIViewController, ModalTransitionDelegate {
     @IBOutlet weak var japanButton: UIButton!
     
     @IBOutlet weak var mainBackgroundImage: UIImageView!
-	
-	var tr_presentTransition: TRViewControllerTransitionDelegate?
-	
-	func present(object: UIView, location: CGPoint) {
-		let vc = MessegeViewController()
-		//vc.messegeViewControllerDelegate = self
-		tr_presentViewController(vc, method: TRPresentTransitionMethod.Elevate(maskView: object, to: location))
-		
-	}
-
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)

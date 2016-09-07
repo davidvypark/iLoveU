@@ -36,7 +36,7 @@
                                                 <state key="normal" title="Chinese" image="China"/>
                                                 <connections>
                                                     <action selector="chinaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roN-3r-i0f"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" id="WAl-B1-v4Z"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="crossDissolve" id="WAl-B1-v4Z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSR-vf-eMK">
@@ -154,7 +154,7 @@
         <!--Messege View Controller-->
         <scene sceneID="B3D-Ef-dYd">
             <objects>
-                <viewController id="Dqf-Ic-HKm" customClass="MessegeViewController" customModule="iLoveU" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessegeViewController" id="Dqf-Ic-HKm" customClass="MessegeViewController" customModule="iLoveU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ma5-oT-qwT"/>
                         <viewControllerLayoutGuide type="bottom" id="R4Q-1m-5Nz"/>
@@ -239,6 +239,6 @@
         <image name="old_map-1280x800" width="1280" height="800"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lxZ-MW-lVL"/>
+        <segue reference="WAl-B1-v4Z"/>
     </inferredMetricsTieBreakers>
 </document>
