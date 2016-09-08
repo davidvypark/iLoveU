@@ -15,6 +15,8 @@
 		FFF0E0801D80B6410021DA85 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFF0E0791D80B6410021DA85 /* Info.plist */; };
 		FFF0E0811D80B6410021DA85 /* ResourceBundle-FZCarousel-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFF0E07A1D80B6410021DA85 /* ResourceBundle-FZCarousel-Info.plist */; };
 		FFF0E0841D80B6660021DA85 /* FZCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF0E0831D80B6660021DA85 /* FZCarouselView.m */; };
+		FFF0E0861D810E820021DA85 /* GermanSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF0E0851D810E820021DA85 /* GermanSound.mp3 */; };
+		FFF0E0881D810F3E0021DA85 /* USASound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFF0E0871D810F3E0021DA85 /* USASound.mp3 */; };
 		FFF29B5F1D2DF5E600D8053C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B5E1D2DF5E600D8053C /* AppDelegate.swift */; };
 		FFF29B611D2DF5E600D8053C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF29B601D2DF5E600D8053C /* ViewController.swift */; };
 		FFF29B641D2DF5E600D8053C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF29B621D2DF5E600D8053C /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 		FFF0E07A1D80B6410021DA85 /* ResourceBundle-FZCarousel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FZCarousel-Info.plist"; sourceTree = "<group>"; };
 		FFF0E0821D80B6660021DA85 /* FZCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZCarouselView.h; sourceTree = "<group>"; };
 		FFF0E0831D80B6660021DA85 /* FZCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZCarouselView.m; sourceTree = "<group>"; };
+		FFF0E0851D810E820021DA85 /* GermanSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GermanSound.mp3; sourceTree = "<group>"; };
+		FFF0E0871D810F3E0021DA85 /* USASound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = USASound.mp3; sourceTree = "<group>"; };
 		FFF29B5B1D2DF5E600D8053C /* iLoveU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLoveU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF29B5E1D2DF5E600D8053C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF29B601D2DF5E600D8053C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				FFF29B7B1D2EDF2400D8053C /* JapaneseSound.mp3 */,
 				FFF29B7D1D2FEFB000D8053C /* HindiSound.mp3 */,
 				FFF29B791D2EDE0100D8053C /* RussianSound.mp3 */,
+				FFF0E0851D810E820021DA85 /* GermanSound.mp3 */,
+				FFF0E0871D810F3E0021DA85 /* USASound.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF0E0861D810E820021DA85 /* GermanSound.mp3 in Resources */,
 				FFF29B7A1D2EDE0100D8053C /* RussianSound.mp3 in Resources */,
 				FFF0E07E1D80B6410021DA85 /* FZCarousel.xcconfig in Resources */,
 				FFF29B771D2EDC3500D8053C /* SpanishSound.mp3 in Resources */,
@@ -245,6 +252,7 @@
 				FFF29B641D2DF5E600D8053C /* Main.storyboard in Resources */,
 				FFF0E06D1D80B2850021DA85 /* KoreanSound.mp3 in Resources */,
 				FFF29B7C1D2EDF2400D8053C /* JapaneseSound.mp3 in Resources */,
+				FFF0E0881D810F3E0021DA85 /* USASound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +436,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iLoveU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DavidVY.iLoveU;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidVY.iLoveU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iLoveU/iLoveU-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -445,7 +453,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iLoveU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DavidVY.iLoveU;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidVY.iLoveU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "iLoveU/iLoveU-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;

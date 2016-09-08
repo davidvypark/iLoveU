@@ -82,7 +82,7 @@ class ViewController: UIViewController {
 			
 		} else if segue.identifier == "usa" {
 			messageVC.loveMessege = "i love you"
-			messageVC.soundFile = "ArabicSound"
+			messageVC.soundFile = "USASound"
 			messageVC.backgroundImageName = [UIImage(named:"USABackground")!,
 			                                 UIImage(named:"USA2")!,
 			                                 UIImage(named:"USA3")!,
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
 			                                 UIImage(named:"USA5")!]
 		} else if segue.identifier == "germany" {
 			messageVC.loveMessege = "ich liebe dich"
-			messageVC.soundFile = "SpanishSound"
+			messageVC.soundFile = "GermanSound"
 			messageVC.backgroundImageName = [UIImage(named:"GermanyBackground")!,
 			                                 UIImage(named:"Germany2")!,
 			                                 UIImage(named:"Germany3")!,
