@@ -37,99 +37,25 @@ class ViewController: UIViewController {
         japanButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         
     }
-//    @IBAction func chinaButtonTapped(sender: AnyObject) {
-//        messageVC.loveMessege = "我爱你"
-//        messageVC.soundFile = "ChineseSound"
-//		messageVC.backgroundImageName = [UIImage(named:"ChinaBackground")!,
-//		                       UIImage(named:"China2")!,
-//		                       UIImage(named:"China3")!,
-//		                       UIImage(named:"China4")!,
-//		                       UIImage(named:"China5")!]
-//
-//        
-//    }
-//    
-//    @IBAction func mexicoButtonTapped(sender: UIButton) {
-//        messageVC.loveMessege = "te amo"
-//        messageVC.soundFile = "SpanishSound"
-//		messageVC.backgroundImageName = [UIImage(named:"MexicoBackground")!,
-//		                       UIImage(named:"Mexico2")!,
-//		                       UIImage(named:"Mexico3")!,
-//		                       UIImage(named:"Mexico4")!,
-//		                       UIImage(named:"Mexico5")!]
-//    }
-//
-//    @IBAction func usaButtonTapped(sender: UIButton) {                  //NEEDED: USA SOUND
-//        messageVC.loveMessege = "i love you"
-//        messageVC.soundFile = "ArabicSound"
-//		messageVC.backgroundImageName = [UIImage(named:"USABackground")!,
-//		                       UIImage(named:"USA2")!,
-//		                       UIImage(named:"USA3")!,
-//		                       UIImage(named:"USA4")!,
-//		                       UIImage(named:"USA5")!]
-//    }
-//    // i should change portugal to something else
-//    @IBAction func germanyButtonTapped(sender: UIButton) {              //NEEDED: GERMAN SOUND
-//        messageVC.loveMessege = "ich liebe dich"
-//        messageVC.soundFile = "SpanishSound"
-//		messageVC.backgroundImageName = [UIImage(named:"GermanyBackground")!,
-//		                       UIImage(named:"Germany2")!,
-//		                       UIImage(named:"Germany3")!,
-//		                       UIImage(named:"Germany4")!,
-//		                       UIImage(named:"Germany5")!]
-//    }
-//    
-//    @IBAction func arabButtonTapped(sender: UIButton) {
-//        messageVC.loveMessege = "أحبك"
-//        messageVC.soundFile = "ArabicSound"
-//		messageVC.backgroundImageName = [UIImage(named:"ArabBackground")!,
-//		                       UIImage(named:"Arab2")!,
-//		                       UIImage(named:"Arab3")!,
-//		                       UIImage(named:"Arab4")!,
-//		                       UIImage(named:"Arab5")!]
-//    }
-//    
-//    @IBAction func indiaButtonTapped(sender: UIButton) {
-//        messageVC.loveMessege = "मैं तुमसे प्यार करता हूँ"
-//        messageVC.soundFile = "HindiSound"
-//		messageVC.backgroundImageName = [UIImage(named:"IndiaBackground")!,
-//		                       UIImage(named:"India2")!,
-//		                       UIImage(named:"India3")!,
-//		                       UIImage(named:"India4")!,
-//		                       UIImage(named:"India5")!]
-//    }
-//    
-//    //change bengali to something else too.
-//    @IBAction func koreaButtonTapped(sender: UIButton) {
-//        messageVC.loveMessege = "사랑해"
-//        messageVC.soundFile = "KoreanSound"
-//		messageVC.backgroundImageName = [UIImage(named:"KoreaBackground")!,
-//		                       UIImage(named:"Korea2")!,
-//		                       UIImage(named:"Korea3")!,
-//		                       UIImage(named:"Korea4")!,
-//		                       UIImage(named:"Korea5")!]
-//        
-//    }
-//    
-//    @IBAction func russiaButtonTapped(sender: UIButton) {
-//        messageVC.loveMessege = "я люблю тебя"
-//        messageVC.soundFile = "RussianSound"
-//		messageVC.backgroundImageName = [UIImage(named:"RussiaBackground")!,
-//		                       UIImage(named:"Russia2")!,
-//		                       UIImage(named:"Russia3")!,
-//		                       UIImage(named:"Russia4")!,
-//		                       UIImage(named:"Russia5")!]
-//    }
-//    
-//    @IBAction func japanButtonTapped(sender: UIButton) {
-//        messageVC.loveMessege = "愛しています"
-//        messageVC.soundFile = "JapaneseSound"
-//		messageVC.backgroundImageName = [UIImage(named:"JapanBackgroudn")!,
-//		                       UIImage(named:"Japan2")!,
-//		                       UIImage(named:"Japan3")!,
-//		                       UIImage(named:"Japan4")!,
-//		                       UIImage(named:"Japan5")!]
-//    }
+	
+    @IBAction func chinaButtonTapped(sender: AnyObject) {
+    }
+    @IBAction func mexicoButtonTapped(sender: UIButton) {
+    }
+    @IBAction func usaButtonTapped(sender: UIButton) {                  //NEEDED: USA SOUND
+    }
+    @IBAction func germanyButtonTapped(sender: UIButton) {              //NEEDED: GERMAN SOUND
+    }
+    @IBAction func arabButtonTapped(sender: UIButton) {
+	}
+    @IBAction func indiaButtonTapped(sender: UIButton) {
+    }
+    @IBAction func koreaButtonTapped(sender: UIButton) {
+    }
+    @IBAction func russiaButtonTapped(sender: UIButton) {
+    }
+    @IBAction func japanButtonTapped(sender: UIButton) {
+    }
 	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -205,7 +131,7 @@ class ViewController: UIViewController {
 		} else if segue.identifier == "japan" {
 			messageVC.loveMessege = "愛しています"
 			messageVC.soundFile = "JapaneseSound"
-			messageVC.backgroundImageName = [UIImage(named:"JapanBackgroudn")!,
+			messageVC.backgroundImageName = [UIImage(named:"JapanBackground")!,
 			                                 UIImage(named:"Japan2")!,
 			                                 UIImage(named:"Japan3")!,
 			                                 UIImage(named:"Japan4")!,

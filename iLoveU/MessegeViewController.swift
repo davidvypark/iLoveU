@@ -78,7 +78,7 @@ class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
 	
 	func configureCarousel() {
 		backgroundImage.imageArray = backgroundImageName
-		backgroundImage.crankInterval = 4
+		backgroundImage.crankInterval = 3
 		backgroundImage.beginCarousel()
 	}
     
