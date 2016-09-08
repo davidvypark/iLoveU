@@ -10,16 +10,15 @@ import UIKit
 import AVFoundation
 import FZCarousel
 
-
-var loveMessege: String?
-var soundFile: String?
-var backgroundImageName: [UIImage]?
-
 class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var loveMessegeLabel: UILabel?
     @IBOutlet weak var heartButton: UIButton?
 	@IBOutlet weak var backgroundImage: FZCarouselView! = FZCarouselView()
+	
+	var loveMessege: String?
+	var soundFile: String?
+	var backgroundImageName: [UIImage]?
 	
     var audioPlayer = AVAudioPlayer()
     
@@ -48,7 +47,7 @@ class MessegeViewController: UIViewController, AVAudioPlayerDelegate {
 		configureCarousel()
 		view.bringSubviewToFront(heartButton!)
 		view.bringSubviewToFront(loveMessegeLabel!)
-		//view.bringSubviewToFron
+
     }
 
     @IBAction func heartButtonTapped(sender: AnyObject) {

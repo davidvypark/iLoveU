@@ -36,7 +36,7 @@
                                                 <state key="normal" title="Chinese" image="China"/>
                                                 <connections>
                                                     <action selector="chinaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="roN-3r-i0f"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="WAl-B1-v4Z"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="china" modalTransitionStyle="partialCurl" id="WAl-B1-v4Z"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSR-vf-eMK">
@@ -44,7 +44,7 @@
                                                 <state key="normal" title="Spanish" image="Mexico"/>
                                                 <connections>
                                                     <action selector="mexicoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9A3-aY-xaK"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="UI2-jR-Mnn"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="mexico" modalTransitionStyle="partialCurl" id="UI2-jR-Mnn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zid-Ta-a8Q">
@@ -52,7 +52,7 @@
                                                 <state key="normal" title="English" image="USA"/>
                                                 <connections>
                                                     <action selector="usaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h1b-Gl-6Ph"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="lxZ-MW-lVL"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="usa" modalTransitionStyle="partialCurl" id="lxZ-MW-lVL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -65,7 +65,7 @@
                                                 <state key="normal" title="Portuguese" image="Germany"/>
                                                 <connections>
                                                     <action selector="germanyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yvK-tp-Uj1"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="YGn-DA-aNa"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="germany" modalTransitionStyle="partialCurl" id="YGn-DA-aNa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZx-Sq-uH3">
@@ -73,7 +73,7 @@
                                                 <state key="normal" title="Arabic" image="Arabic"/>
                                                 <connections>
                                                     <action selector="arabButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BGn-3Y-xH5"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="UNz-9Z-9Y2"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="arab" modalTransitionStyle="partialCurl" id="UNz-9Z-9Y2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTH-Uo-DL7">
@@ -81,7 +81,7 @@
                                                 <state key="normal" title="Hindi" image="India"/>
                                                 <connections>
                                                     <action selector="indiaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Xx-sA-rV2"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="VFX-9h-Mdw"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="india" modalTransitionStyle="partialCurl" id="VFX-9h-Mdw"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -94,7 +94,7 @@
                                                 <state key="normal" title="Korean" image="Korea"/>
                                                 <connections>
                                                     <action selector="koreaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgw-BD-eR3"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="4fk-j6-QUT"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="korea" modalTransitionStyle="partialCurl" id="4fk-j6-QUT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-iI-WhJ">
@@ -102,7 +102,7 @@
                                                 <state key="normal" title="Russian" image="Russia"/>
                                                 <connections>
                                                     <action selector="russiaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDm-bE-VDi"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="fTT-w9-hDS"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="russia" modalTransitionStyle="partialCurl" id="fTT-w9-hDS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eG-Og-6Cu">
@@ -110,7 +110,7 @@
                                                 <state key="normal" title="Japanese" image="Japan"/>
                                                 <connections>
                                                     <action selector="japanButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LG2-fI-qEj"/>
-                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" modalTransitionStyle="partialCurl" id="Ec5-ug-XvE"/>
+                                                    <segue destination="Dqf-Ic-HKm" kind="presentation" identifier="japan" modalTransitionStyle="partialCurl" id="Ec5-ug-XvE"/>
                                                 </connections>
                                             </button>
                                         </subviews>
